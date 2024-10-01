@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f5bad1;
+    padding: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .nav-logo {
+    color: #2d3436;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+ 
+  .nav-menu {
+    list-style: none;
+    display: flex;
+  }
+ 
+  .nav-menu li {
+    margin-left: 2rem;
+  }
+ 
+  .nav-menu a {
+    color: #2d3436;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+ 
+  .nav-menu a:hover {
+    color: #636e72;
+    transform: translateY(-3px);
+  }
+
+/* Seção de Pesquisa */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.search-bar, .search-options {
+    margin: 10px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.search-options label, .search-options select {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-options select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f3a6b0;
+}
+
+/* Lista de Animais */
+.animal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.animal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.animal-card img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.animal-card h3 {
+    color: #89c2d9;
+}
+
+.animal-card p {
+    color: #adb5bd;
+}
+
+.animal-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffafcc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.animal-cards {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.animal-card a:hover {
+    background-color: #ffb3c1;
+}
+
+/* Cores em tons pastéis */
+body {
+    background-color: #fffcf2;
+}
+
+nav {
+    background-color: #bde0fe;
+}
+
+.animal-card {
+    background-color: #f7e7d3;
+}
+
+.animal-card h3 {
+    color: #ffb4a2;
+}
+
+.animal-card a {
+    background-color: #cdb4db;
+}
+
+
