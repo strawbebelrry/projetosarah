@@ -43,7 +43,8 @@
 <hr>
 
     <!-- Lista de Animais -->
-     <div class="container"><h1 class="text-center">Notícias</h1>
+     <div class="container">
+      <h1 class="text-center">Notícias</h1>
     <section class="animal-list">
         <div class="animal-card">
             <img src="../img/pc.jpg" alt="">
@@ -74,24 +75,11 @@
     </div>
 
     <div class="animal-card">
-<<<<<<< HEAD:noticias/noticias.html
       <div class="bg-image hover-overlay">
         <img src="../img/1.jpg" alt="" class="w-100" />
-        <div
-          class="mask"
-          style="
-      background: linear-gradient(
-        45deg,
-        hsla(168, 85%, 52%, 0.5),
-        hsla(263, 88%, 45%, 0.5) 100%
-      );
-    "
-        ></div>
+     
       </div>
       
-=======
-      <img src="../img/1.jpg" alt="">
->>>>>>> 2ad9ba4b33ec78d56ffadeebfa80ffdbc7e30c76:prototipo/noticias/noticias.html
       <h5>Número de animais abandonados em Foz é o pior da última década, dizem protetoras  </h5>
       <a href="https://www.h2foz.com.br/cidade/numero-de-animais-abandonados-em-foz-e-o-pior-da-ultima-decada-dizem-protetoras/">Mais detalhes</a>
   </div>
@@ -100,6 +88,23 @@
         <!-- Adicione mais cards de animais conforme necessário -->
     </section>
   </div>
+  <footer style="text-align: center; padding: 20px; background-color: #f8f9fa;"></footer>
+    <div class="fixed-bottom">
+        <p><b>Entre em contato:</b></p>
+        <a href="https://www.sescpr.com.br/" target="_blank">
+            <img src="../noticias/img/Insta.jpg.jfif" alt="Instagram" style="width: 30px; margin: 0 10px;">
+        </a>
+        <a href="https://www.sescpr.com.br/" target="_blank">
+            <img src="../noticias/img/Face.jpg.jfif" alt="Facebook" style="width: 30px; margin: 0 10px;">
+        </a>
+        <a href="https://www.sescpr.com.br/" target="_blank">
+            <img src="../noticias/img/tiktok.jpg.jfif" alt="TikTok" style="width: 30px; margin: 0 10px;">
+        </a>
+        <a href="https://www.sescpr.com.br/" target="_blank">
+            <img src="../noticias/img/tww.jpg.jfif" alt="Twitter" style="width: 30px; margin: 0 10px;">
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

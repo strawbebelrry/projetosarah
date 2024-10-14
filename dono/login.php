@@ -16,6 +16,29 @@
   
 <div class="login-box">
   <h1>Login do Usuário</h1>
+  <?php
+    include './php/config.php';
+
+    if (isset($_POST['submit'])){
+      $email = $_POST['email'];
+      $senha = $_POST['senha'];
+
+      $stmt = $conn->prepare("SELECT * FROM donos WHERE email=?");
+      if (!$stmt) {
+        die("Erro na preparação da consulta: " . $conn->error);
+
+      }
+
+      $stmt->blind_param("s", $email);
+      if (!stmt->execute()) {
+        die("Erro na preparação da consulta: " . $stmt->error);
+      }
+
+      $result = $stmt->get_result();
+
+      if ($result)
+    }
+  ?>
   <form>
     <div class="user-box">
       <input type="text" name="" required="">

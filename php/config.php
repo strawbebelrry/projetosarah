@@ -1,4 +1,5 @@
 <?php
+// conexão com o banco de dados.
 $hostname = "localhost";
 $bancodedados = "prototipo";
 $usuario =  "root";
