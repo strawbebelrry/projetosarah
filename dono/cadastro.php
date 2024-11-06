@@ -16,7 +16,7 @@
   
 <div class="login-box">
   <h1>Cadastro do Usuário</h1>
-  <form>
+  <form method="POST" action="function.php">
     <div class="user-box">
       <input type="text" name="" required="">
       <label>Insira seu email:</label>

@@ -20,6 +20,7 @@ include './inc/navbar.php';?>
     <div class="common_style">
 
 <!-- about section -->
+ 
 <section class="about_section">
   <div class="container">
     <div class="row m-5">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./dono/cadastro.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -23,39 +23,25 @@
       $email = $_POST['email'];
       $senha = $_POST['senha'];
 
-      $stmt = $conn->prepare("SELECT * FROM donos WHERE email=?");
-      if (!$stmt) {
-        die("Erro na preparação da consulta: " . $conn->error);
+      $sql = "SELECT * FROM usuario WHERE email='$email'";
 
-      }
+      $result = $conn->query($sql);
 
-      $stmt->blind_param("s", $email);
-      if (!stmt->execute()) {
-        die("Erro na preparação da consulta: " . $stmt->error);
-      }
-
-      $result = $stmt->get_result();
-
-      if ($result)
     }
   ?>
-  <form>
+  <form method="POST" action="login.php">
     <div class="user-box">
-      <input type="text" name="" required="">
+      <input type="email" name="email" required>
       <label>Insira seu email:</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="">
+      <input type="password" name="senha" required>
       <label>Senha:</label>
     </div>
              
-    <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <button type="submit" name="submit" class="btn btn-outline-dark">
       Pronto
-    </a>
+    </button>
   </form>
 </div>
 
